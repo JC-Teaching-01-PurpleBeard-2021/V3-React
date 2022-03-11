@@ -26,6 +26,26 @@ function CMNavBar() {
               W9 - Form
             </NavLink>
           </li>
+          <li>
+            <NavLink className={({ isActive }) => (isActive ? 'activeLink' : '')} to="/classMaterial/week10_01">
+              W10 - Props
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className={({ isActive }) => (isActive ? 'activeLink' : '')} to="/classMaterial/week10_02">
+              W10 - useState
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className={({ isActive }) => (isActive ? 'activeLink' : '')} to="/classMaterial/week10_03">
+              W10 - useEffect
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className={({ isActive }) => (isActive ? 'activeLink' : '')} to="/classMaterial/week10_04">
+              W10 - Events
+            </NavLink>
+          </li>
         </ul>
       </nav>
   );

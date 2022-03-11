@@ -91,7 +91,7 @@
 
 .sidenav li {
   padding: 1rem;
-  font-size: 1.5em;
+  font-size: 1.15em;
 }
 
 .sidenav a {
@@ -120,7 +120,7 @@
 }
 
 .activeLink {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: tomato !important;
 }
 
