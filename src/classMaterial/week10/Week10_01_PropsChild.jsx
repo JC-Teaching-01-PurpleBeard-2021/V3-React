@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Week10_01_PropsChild(props) {
+  // function Week10_01_PropsChild({ of all the props}) {
   // console.log(props);
 
   // Example that you cannot change props

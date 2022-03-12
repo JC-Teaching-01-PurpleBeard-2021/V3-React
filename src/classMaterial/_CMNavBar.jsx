@@ -46,6 +46,11 @@ function CMNavBar() {
               W10 - Events
             </NavLink>
           </li>
+          <li>
+            <NavLink className={({ isActive }) => (isActive ? 'activeLink' : '')} to="/classMaterial/week10_05">
+              W10 - Forms
+            </NavLink>
+          </li>
         </ul>
       </nav>
   );

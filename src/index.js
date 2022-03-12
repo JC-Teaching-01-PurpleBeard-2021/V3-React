@@ -14,7 +14,8 @@ import Week9_03_Form from './classMaterial/week9/Week9_03_Form';
 import Week10_01_PropsParent from './classMaterial/week10/Week10_01_PropsParent';
 import Week10_02_useState from './classMaterial/week10/Week10_02_useState';
 import Week10_03_useEffect from './classMaterial/week10/Week10_03_useEffect';
-import Week10_04_Events from './classMaterial/week10/Week10_04_Events';
+import Week10_04_EventsP from './classMaterial/week10/Week10_04_EventsP';
+import Week10_05_FormsP from './classMaterial/week10/Week10_05_FormsP';
 import Project30_Parent from './classProjects/Project30_Parent';
 import Project31_Form from './classProjects/Project31_Form';
 import Project32_Parent from './classProjects/Project32_Parent';
@@ -35,7 +36,8 @@ ReactDOM.render(
         <Route path="/classMaterial/week10_01" element={<Week10_01_PropsParent />} />
         <Route path="/classMaterial/week10_02" element={<Week10_02_useState />} />
         <Route path="/classMaterial/week10_03" element={<Week10_03_useEffect />} />
-        <Route path="/classMaterial/week10_04" element={<Week10_04_Events />} />
+        <Route path="/classMaterial/week10_04" element={<Week10_04_EventsP />} />
+        <Route path="/classMaterial/week10_05" element={<Week10_05_FormsP />} />
         <Route path="/classProjects/project30" element={<Project30_Parent />} />
         <Route path="/classProjects/project31" element={<Project31_Form />} />
         <Route path="/classProjects/project32" element={<Project32_Parent />} />
