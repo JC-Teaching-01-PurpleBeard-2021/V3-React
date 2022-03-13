@@ -21,6 +21,7 @@ import Project31_Form from './classProjects/Project31_Form';
 import Project32_Parent from './classProjects/Project32_Parent';
 import Project33_State from './classProjects/Project33_State';
 import Project34_useEffect from './classProjects/Project34_useEffect';
+import Project35_Forms from './classProjects/Project35_Forms';
 import Week9_HW_FramerMotion from './homeWork/week9/Week9_HW_FramerMotion';
 import Week10_HW_PlaceHolder from './homeWork/week10/Week10_HW_PlaceHolder';
 
@@ -43,7 +44,7 @@ ReactDOM.render(
         <Route path="/classProjects/project32" element={<Project32_Parent />} />
         <Route path="/classProjects/project33" element={<Project33_State />} />
         <Route path="/classProjects/project34" element={<Project34_useEffect />} />
-        <Route path="/classProjects/project35" element={<Project30_Parent />} />
+        <Route path="/classProjects/project35" element={<Project35_Forms />} />
         <Route path="/homeWork/week9" element={<Week9_HW_FramerMotion />} />
         <Route path="/homeWork/week10" element={<Week10_HW_PlaceHolder />} />
       </Routes>

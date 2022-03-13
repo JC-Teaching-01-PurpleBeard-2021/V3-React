@@ -64,9 +64,7 @@ function Week10_04_Events() {
           <br />
           <br />
           <button disabled={btnState}>
-            {btnState == true
-              ? 'I am not working...:-('
-              : 'I am all better now!!'}
+            {btnState ? 'I am not working...:-(' : 'I am all better now!!'}
           </button>
           <h2>Passing method to child</h2>
           <ul>{getnumsList()}</ul>
