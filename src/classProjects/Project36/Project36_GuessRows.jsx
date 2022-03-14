@@ -7,9 +7,10 @@ function Project36_GuessRows(props) {
   return !props.check ? (
     <></>
   ) : (
-    <ul>{props.guessWordle.map(() => {
+    // <ul>{props.guessWordle.map(() => {
       
-    })}</ul>
+    // })}</ul>
+    <></>
   )
 }
 
