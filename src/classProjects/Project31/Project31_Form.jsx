@@ -3,7 +3,7 @@ import { InputText } from 'primereact/inputtext';
 import { InputNumber } from 'primereact/inputnumber';
 import { RadioButton } from 'primereact/radiobutton';
 
-import CPNavBar from './_CPNavBar';
+import CPNavBar from '../_CPNavBar';
 import './Project31_Styles.css';
 
 function Project31_Form() {

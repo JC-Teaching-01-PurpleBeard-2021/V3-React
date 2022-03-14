@@ -1,0 +1,12 @@
+#wordleSubmit,
+#wordleGuessSubmit {
+  margin-left: 20px;
+}
+
+#loadScreen label,
+#gameScreen label {
+  color: gold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  display: block;
+}

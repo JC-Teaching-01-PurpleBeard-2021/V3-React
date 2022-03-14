@@ -41,6 +41,16 @@ function CPNavBar() {
               Project 35
             </NavLink>
           </li>
+          <li>
+            <NavLink className={({ isActive }) => (isActive ? 'activeLink' : '')} to="/classProjects/project36">
+              Project 36
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className={({ isActive }) => (isActive ? 'activeLink' : '')} to="/classProjects/project37">
+              Project 37
+            </NavLink>
+          </li>
         </ul>
       </nav>
   );

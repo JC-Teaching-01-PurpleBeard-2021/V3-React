@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CPNavBar from './_CPNavBar';
+import CPNavBar from '../_CPNavBar';
 
 function Project34_useEffect() {
   const [dataId, setDataId] = useState(1);

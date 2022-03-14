@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CPNavBar from './_CPNavBar';
+import CPNavBar from '../_CPNavBar';
 
 function Project33_State() {
   const [colour, setColour] = useState('blue');
