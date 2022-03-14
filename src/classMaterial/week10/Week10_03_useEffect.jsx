@@ -3,36 +3,39 @@ import CMNavBar from '../_CMNavBar';
 
 function Week10_03_useEffect() {
   const [button, setButton] = useState(true);
-  const [jsonData, updateData] = useState('hello');
+  const [jsonData, setJsonData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     alert('Hello Class');
   });
 
-  /*
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/comments/2')
-      .then((response) => response.json())
-      .then((json) => console.log(json));
-    // .then((json) => updateJSON(json));
-  });
-  // }, [jsonData]);
-
-  const updateJSON = (data) => {
-    updateData(data.name);
-  };
-  */
+  // useEffect(async () => {
+  //   const response = await fetch('https://jsonplaceholder.typicode.com/comments');
+  //   const data = await response.json();
+  //   // console.log(data);
+  //   setJsonData(data);
+  //   setLoading(false);
+  // }, []);
 
   const changeButton = () => {
     setButton(!button);
   };
 
-  return (
+  // Here we are wrapping the hole return with ternary operator so we see '...loading' until the data is loaded
+  return loading ? (
+    <div className="app-container">
+      <CMNavBar />
+      <div className="content">
+        <h1>...Loading</h1>
+      </div>
+    </div>
+  ) : (
     <div className="app-container">
       <CMNavBar />
       <div className="content">
         <h1>First Example of useEffect</h1>
-        <h3>{jsonData}</h3>
+        <h3>{jsonData[button ? 0 : 1].name}</h3>
         <button
           onClick={changeButton}
           style={{

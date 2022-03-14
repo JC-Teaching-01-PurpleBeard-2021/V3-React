@@ -4,11 +4,13 @@ import CPNavBar from './_CPNavBar';
 function Project34_useEffect() {
   const [dataId, setDataId] = useState(1);
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then((response) => response.json())
-      .then((json) => setData(json));
+  useEffect(async () => {
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const dataAPI = await res.json();
+    setData(dataAPI);
+    setLoading(false);
   }, []);
 
   const changeData = () => {
@@ -17,7 +19,14 @@ function Project34_useEffect() {
 
   // console.log(data);
 
-  return (
+  return loading ? (
+    <div className="app-container">
+      <CPNavBar />
+      <div className="content">
+        <h1>Project 34</h1>
+      </div>
+    </div>
+  ) : (
     <div className="app-container">
       <CPNavBar />
       <div className="content">
