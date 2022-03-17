@@ -14,7 +14,7 @@ function Project36_LoadScreen(props) {
         id="wordle"
         maxLength="5"
         value={inputWordle}
-        onChange={(e) => setInputWordle(e.target.value)}
+        onChange={(e) => setInputWordle(e.target.value.toUpperCase())}
       />
       <Button
         label="Submit"

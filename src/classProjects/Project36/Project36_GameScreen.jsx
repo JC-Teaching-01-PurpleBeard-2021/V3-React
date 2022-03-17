@@ -1,39 +1,100 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
 import Project36_GuessRows from './Project36_GuessRows';
 
+const guessWordle = [];
+
 function Project36_GameScreen(props) {
+  // inputted word
   const [inputWordleG, setInputWordleG] = useState('');
 
-  useEffect(() => {
-    setInputWordleG(props.wordStartProp);
-  }, [props.wordStartProp]);
+  // ----------------------------------------------------------------------------------
+  // Guessed Wordles, record attempt, what is right and what is wrong
+  // **** I do not understand what is happening here need to speak to someone ****
+  // const [guessWordle, setGuessWordle] = useState([]);
+  // ----------------------------------------------------------------------------------
+
+  // Attempts
+  const [guesses, setGuesses] = useState(1);
+
+  // Checks the guess to see if correct, if not runs function setGuess
+  const checkWordle = () => {
+    if (inputWordleG === props.wordleProp) {
+      alert(
+        `You are a winner you guessed ${props.wordleProp} on your ${guesses} attempt.`
+      );
+      props.resetWorldeProp('');
+      // setGuessWordle([]);
+      guessWordle.length = 0;
+      setGuesses(1);
+    } else {
+      updateGuess();
+    }
+  };
+
+  // Map through Wordle again Guessed Wordle to see what is right
+  const updateGuess = () => {
+    const checkedArr = [];
+    for (let i = 0; i < props.wordleProp.length; i++) {
+      if (props.wordleProp[i] === inputWordleG[i]) {
+        checkedArr.push(true);
+      } else if (props.wordleProp.includes(inputWordleG[i])) {
+        checkedArr.push('exists');
+      } else {
+        checkedArr.push(false);
+      }
+    }
+
+    // setGuessWordle((gw) =>
+    //   // gw.push({
+    //   //   attemptId: guesses,
+    //   //   guess: guess,
+    //   //   check: checkedArr,
+    //   // })
+    //   gw.push('test')
+    // );
+
+    guessWordle.push({
+      key: guesses,
+      guess: inputWordleG,
+      check: checkedArr,
+    });
+
+    // console.log(props.wordleProp);
+    // console.log(guessWordle);
+
+    setGuesses(guesses + 1);
+  };
 
   return (
     <div id="gameScreen">
-      <label htmlFor="wordleGuess">
-        Enter Your {props.guessesProp} Wordle Guess
-      </label>
-      <InputText
-        required
-        id="wordleGuess"
-        maxLength="5"
-        value={inputWordleG}
-        onChange={(e) => setInputWordleG(e.target.value)}
-      />
-      <Button
-        label="Submit"
-        id="wordleGuessSubmit"
-        className="p-button-warning"
-        disabled={inputWordleG.length < 5}
-        onClick={() => {
-          props.funcCheckProp(inputWordleG);
-        }}
-      />
-      <Project36_GuessRows guessWordle={props.guessWordleProp} />
+      <div className="guessInput">
+        <label htmlFor="wordleGuess">Enter Your {guesses} Wordle Guess</label>
+        <InputText
+          required
+          id="wordleGuess"
+          maxLength="5"
+          value={inputWordleG}
+          onChange={(e) => setInputWordleG(e.target.value.toUpperCase())}
+        />
+        <Button
+          label="Submit"
+          id="wordleGuessSubmit"
+          className="p-button-warning"
+          disabled={inputWordleG.length < 5}
+          onClick={checkWordle}
+        />
+      </div>
+      {guessWordle.length ? (
+        guessWordle.map((gw) => (
+          <Project36_GuessRows guessWordle={gw} key={gw.key} />
+        ))
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 }
