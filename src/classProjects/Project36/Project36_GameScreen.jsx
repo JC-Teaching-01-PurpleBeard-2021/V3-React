@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
+import nextId from 'react-id-generator';
 
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
 import Project36_GuessRows from './Project36_GuessRows';
 
-const guessWordle = [];
-
 function Project36_GameScreen(props) {
+  // ----------------------------------------------------------------------------------
   // inputted word
   const [inputWordleG, setInputWordleG] = useState('');
 
-  // ----------------------------------------------------------------------------------
   // Guessed Wordles, record attempt, what is right and what is wrong
-  // **** I do not understand what is happening here need to speak to someone ****
-  // const [guessWordle, setGuessWordle] = useState([]);
-  // ----------------------------------------------------------------------------------
+  const [guessWordleState, setGuessWordleState] = useState([]);
 
   // Attempts
   const [guesses, setGuesses] = useState(1);
+  // ----------------------------------------------------------------------------------
 
   // Checks the guess to see if correct, if not runs function setGuess
   const checkWordle = () => {
@@ -27,8 +25,6 @@ function Project36_GameScreen(props) {
         `You are a winner you guessed ${props.wordleProp} on your ${guesses} attempt.`
       );
       props.resetWorldeProp('');
-      // setGuessWordle([]);
-      guessWordle.length = 0;
       setGuesses(1);
     } else {
       updateGuess();
@@ -48,20 +44,14 @@ function Project36_GameScreen(props) {
       }
     }
 
-    // setGuessWordle((gw) =>
-    //   // gw.push({
-    //   //   attemptId: guesses,
-    //   //   guess: guess,
-    //   //   check: checkedArr,
-    //   // })
-    //   gw.push('test')
-    // );
-
-    guessWordle.push({
-      key: guesses,
-      guess: inputWordleG,
-      check: checkedArr,
-    });
+    setGuessWordleState([
+      ...guessWordleState,
+      {
+        key: guesses,
+        guess: inputWordleG,
+        check: checkedArr,
+      },
+    ]);
 
     // console.log(props.wordleProp);
     // console.log(guessWordle);
@@ -88,9 +78,9 @@ function Project36_GameScreen(props) {
           onClick={checkWordle}
         />
       </div>
-      {guessWordle.length ? (
-        guessWordle.map((gw) => (
-          <Project36_GuessRows guessWordle={gw} key={gw.key} />
+      {guessWordleState.length ? (
+        guessWordleState.map((gw) => (
+          <Project36_GuessRows guessWordle={gw} key={nextId()} />
         ))
       ) : (
         <div></div>
