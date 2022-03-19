@@ -21,11 +21,7 @@ function Project36_GuessRows(props) {
   }
 
   return (
-    <div
-      className="guessRows"
-      id={props.guessWordle.key}
-      key={props.guessWordle.key}
-    >
+    <div className="guessRows" id={props.key} key={props.key}>
       {rowText}
     </div>
   );
