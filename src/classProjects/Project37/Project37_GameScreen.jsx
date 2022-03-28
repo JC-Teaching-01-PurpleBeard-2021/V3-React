@@ -4,9 +4,9 @@ import nextId from 'react-id-generator';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
-import Project36_GuessRows from './Project36_GuessRows';
+import Project37_GuessRows from './Project37_GuessRows';
 
-function Project36_GameScreen(props) {
+function Project37_GameScreen(props) {
   // ----------------------------------------------------------------------------------
   // inputted word
   const [inputWordleG, setInputWordleG] = useState('');
@@ -80,7 +80,7 @@ function Project36_GameScreen(props) {
       </div>
       {guessWordleState.length ? (
         guessWordleState.map((gw) => (
-          <Project36_GuessRows guessWordle={gw} key={nextId()} />
+          <Project37_GuessRows guessWordle={gw} key={nextId()} />
         ))
       ) : (
         <div></div>
@@ -89,4 +89,4 @@ function Project36_GameScreen(props) {
   );
 }
 
-export default Project36_GameScreen;
+export default Project37_GameScreen;

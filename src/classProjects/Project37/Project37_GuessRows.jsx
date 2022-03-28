@@ -1,7 +1,7 @@
 import React from 'react';
 import nextId from 'react-id-generator';
 
-function Project36_GuessRows(props) {
+function Project37_GuessRows(props) {
   // console.log(props.guessWordle);
   let rowText = [];
 
@@ -27,4 +27,4 @@ function Project36_GuessRows(props) {
   );
 }
 
-export default Project36_GuessRows;
+export default Project37_GuessRows;

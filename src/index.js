@@ -24,8 +24,8 @@ import Project32_Parent from './classProjects/Project32/Project32_Parent';
 import Project33_State from './classProjects/Project33/Project33_State';
 import Project34_useEffect from './classProjects/Project34/Project34_useEffect';
 import Project35_Forms from './classProjects/Project35/Project35_Forms';
-import Project36_Parent from './classProjects/Project36/Project36_Parent';
-import Project37_Parent from './classProjects/Project37/Project37_Parent';
+import Project36 from './classProjects/Project36/Project36';
+import Project37 from './classProjects/Project37/Project37';
 // Homework
 import Week9_HW_FramerMotion from './homeWork/week9/Week9_HW_FramerMotion';
 import Week10_HW_PlaceHolder from './homeWork/week10/Week10_HW_PlaceHolder';
@@ -52,8 +52,8 @@ ReactDOM.render(
         <Route path="/classProjects/project33" element={<Project33_State />} />
         <Route path="/classProjects/project34" element={<Project34_useEffect />} />
         <Route path="/classProjects/project35" element={<Project35_Forms />} />
-        <Route path="/classProjects/project36" element={<Project36_Parent />} />
-        <Route path="/classProjects/project37" element={<Project37_Parent />} />
+        <Route path="/classProjects/project36" element={<Project36 />} />
+        <Route path="/classProjects/project37" element={<Project37 />} />
         {/* Homework */}
         <Route path="/homeWork/week9" element={<Week9_HW_FramerMotion />} />
         <Route path="/homeWork/week10" element={<Week10_HW_PlaceHolder />} />
