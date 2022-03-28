@@ -22,7 +22,7 @@ function Project37() {
     <div className="app-container">
       <CPNavBar />
       <div className="content">
-        <h1>Project 36 - Wordle</h1>
+        <h1>Project 37 - Wordle</h1>
         {loadScreen ? 
         <Project37_LoadScreen funcWordleProp={createWordle} /> : 
         <Project37_GameScreen wordleProp={wordle} resetWorldeProp={createWordle}/>}
