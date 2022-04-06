@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { InputText } from 'primereact/inputtext';
 import { InputNumber } from 'primereact/inputnumber';
 import { RadioButton } from 'primereact/radiobutton';
+import { Button } from 'primereact/button';
 
 import CPNavBar from '../_CPNavBar';
 import './Project31_Styles.css';
@@ -37,7 +38,7 @@ function Project31_Form() {
               <RadioButton inputId="sex2" name="sex" value="f" onChange={(e) => setSex(e.value)} checked={sex === 'f'}/>
               </div>
               <br />
-              <button type="submit">Hello Click Me Now</button>
+              <Button label="Hello Click Me Now" className="p-button-success" />
             </form>
           </div>
         </div>

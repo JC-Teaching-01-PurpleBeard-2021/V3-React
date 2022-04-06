@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CMNavBar from '../_CMNavBar';
 
-function Week10_05_FormsP() {
+function Week10_05_Forms() {
   const [state, setState] = useState({ name: '', email: '' });
   const [btnState, setBtnState] = useState(true);
 
@@ -62,4 +62,4 @@ function Week10_05_FormsP() {
   );
 }
 
-export default Week10_05_FormsP;
+export default Week10_05_Forms;

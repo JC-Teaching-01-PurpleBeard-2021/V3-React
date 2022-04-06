@@ -17,7 +17,7 @@ import Week10_01_PropsParent from './classMaterial/week10/Week10_01_PropsParent'
 import Week10_02_useState from './classMaterial/week10/Week10_02_useState';
 import Week10_03_useEffect from './classMaterial/week10/Week10_03_useEffect';
 import Week10_04_EventsP from './classMaterial/week10/Week10_04_EventsP';
-import Week10_05_FormsP from './classMaterial/week10/Week10_05_FormsP';
+import Week10_05_Forms from './classMaterial/week10/Week10_05_Forms';
 // Class Projects
 import Project30_Parent from './classProjects/Project30/Project30_Parent';
 import Project31_Form from './classProjects/Project31/Project31_Form';
@@ -32,8 +32,8 @@ import Week9_HW_FramerMotion from './homeWork/week9/Week9_HW_FramerMotion';
 import Week10_HW_PlaceHolder from './homeWork/week10/Week10_HW_PlaceHolder';
 
 ReactDOM.render(
-  // prettier-ignore
-  <React.StrictMode>
+	// prettier-ignore
+	<React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
@@ -45,7 +45,7 @@ ReactDOM.render(
         <Route path="/classMaterial/week10_02" element={<Week10_02_useState />} />
         <Route path="/classMaterial/week10_03" element={<Week10_03_useEffect />} />
         <Route path="/classMaterial/week10_04" element={<Week10_04_EventsP />} />
-        <Route path="/classMaterial/week10_05" element={<Week10_05_FormsP />} />
+        <Route path="/classMaterial/week10_05" element={<Week10_05_Forms />} />
         {/* Class Projects */}
         <Route path="/classProjects/project30" element={<Project30_Parent />} />
         <Route path="/classProjects/project31" element={<Project31_Form />} />
@@ -61,5 +61,5 @@ ReactDOM.render(
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+	document.getElementById('root')
 );
