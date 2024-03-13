@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CPNavBar from '../_CPNavBar';
 
-function Project33_State() {
+function Project33State() {
   const [colour, setColour] = useState('blue');
 
   const updateColour = () => {
@@ -23,4 +23,4 @@ function Project33_State() {
   );
 }
 
-export default Project33_State;
+export default Project33State;

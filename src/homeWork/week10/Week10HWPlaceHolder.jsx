@@ -2,13 +2,13 @@ import React from 'react';
 
 import HWNavBar from '../_HWNavBar';
 
-function Week10_HW_PlaceHolder() {
+function Week10HWPlaceHolder() {
   return (
     <div className="app-container">
       <HWNavBar />
-      <div className="content">Week10_HW_PlaceHolder</div>;
+      <div className="content">Week10HWPlaceHolder</div>;
     </div>
   );
 }
 
-export default Week10_HW_PlaceHolder;
+export default Week10HWPlaceHolder;

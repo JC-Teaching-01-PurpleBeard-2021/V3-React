@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Week10_02_Custom(initialVal = false) {
+function Week1002Custom(initialVal = false) {
   const [state, setState] = useState(initialVal);
 
   const toggle = () => {
@@ -10,4 +10,4 @@ function Week10_02_Custom(initialVal = false) {
   return [state, toggle];
 }
 
-export default Week10_02_Custom;
+export default Week1002Custom;

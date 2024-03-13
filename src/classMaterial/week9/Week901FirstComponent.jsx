@@ -2,7 +2,7 @@ import React from 'react';
 
 import CMNavBar from '../_CMNavBar';
 
-function Week9_01_FirstComponent() {
+function Week901FirstComponent() {
   return (
     <div className="app-container">
       <CMNavBar />
@@ -14,4 +14,4 @@ function Week9_01_FirstComponent() {
   );
 }
 
-export default Week9_01_FirstComponent;
+export default Week901FirstComponent;

@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import nextId from 'react-id-generator';
 import CMNavBar from '../_CMNavBar';
 
-import Week10_04_EventsC from './Week10_04_EventsC';
+import Week1004EventsC from './Week1004EventsC';
 
-function Week10_04_Events() {
+function Week1004Events() {
   const [backColour, setBackColour] = useState('Aquamarine');
   const [btnState, setBtnState] = useState(true);
   const [nums, setNums] = useState([1, 2, 3, 4, 5]);
 
   const updateColour = () => {
     let updateColour =
-      backColour == 'Aquamarine' ? 'DarkGoldenRod' : 'Aquamarine';
+      backColour === 'Aquamarine' ? 'DarkGoldenRod' : 'Aquamarine';
     setBackColour((bc) => (bc = updateColour));
     setBtnState(!btnState);
   };
@@ -27,7 +27,7 @@ function Week10_04_Events() {
 
   const getnumsList = () => {
     let numsList = nums.map((n) => (
-      <Week10_04_EventsC key={nextId()} value={n} remove={remove} />
+      <Week1004EventsC key={nextId()} value={n} remove={remove} />
     ));
     return numsList;
   };
@@ -39,7 +39,7 @@ function Week10_04_Events() {
         <div style={{ height: '100vh', backgroundColor: backColour }}>
           <h1>React Events</h1>
           <br />
-          <a href="https://reactjs.org/docs/events.html" target="_blank">
+          <a href="https://reactjs.org/docs/events.html" target="blank">
             React events
           </a>
           <br />
@@ -74,4 +74,4 @@ function Week10_04_Events() {
   );
 }
 
-export default Week10_04_Events;
+export default Week1004Events;

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Week10_02_Custom from './Week10_02_Custom';
+// import Week1002Custom from './Week1002Custom';
 
 import CMNavBar from '../_CMNavBar';
 
-function Week10_02_useState() {
+function Week1002useState() {
   const [count, setCount] = useState(0);
   const [button, setButton] = useState(true);
   // 1. Reference the current state
@@ -20,7 +20,7 @@ function Week10_02_useState() {
 
   /*
   // Custom Hook
-  const [button, changeButton] = Week10_02_Custom(true);
+  const [button, changeButton] = Week1002Custom(true);
   */
 
   return (
@@ -46,7 +46,7 @@ function Week10_02_useState() {
         </button>
         <br />
         <br />
-        <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">
+        <a href="https://reactjs.org/docs/hooks-intro.html" target="blank">
           Hooks Docs
         </a>
       </div>
@@ -54,4 +54,4 @@ function Week10_02_useState() {
   );
 }
 
-export default Week10_02_useState;
+export default Week1002useState;

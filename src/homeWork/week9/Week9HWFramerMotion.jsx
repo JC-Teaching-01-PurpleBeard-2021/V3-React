@@ -3,9 +3,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Modal from './components/Modal';
 
 import HWNavBar from '../_HWNavBar';
-import './Week9_HW_Style.css';
+import './Week9HWStyle.css';
 
-function Week9_HW_FramerMotion() {
+function Week9HWFramerMotion() {
   // Modal state
   const useModal = () => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -21,7 +21,7 @@ function Week9_HW_FramerMotion() {
     <div className="app-container HW_Main">
       <HWNavBar />
       <div className="content">
-        <a href="https://youtu.be/SuqU904ZHA4" target="_blank">
+        <a href="https://youtu.be/SuqU904ZHA4" target="blank">
           Tutorial Video
         </a>
         <motion.main>
@@ -67,4 +67,4 @@ const ModalContainer = ({ children }) => (
   </AnimatePresence>
 );
 
-export default Week9_HW_FramerMotion;
+export default Week9HWFramerMotion;

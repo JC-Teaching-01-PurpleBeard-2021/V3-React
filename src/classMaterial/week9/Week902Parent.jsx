@@ -1,10 +1,10 @@
 import React from 'react';
 
 import CMNavBar from '../_CMNavBar';
-import Week9_02_Child from './Week9_02_Child';
-import './Week9_02_Style.css';
+import Week902Child from './Week902Child';
+import './Week902Style.css';
 
-function Week9_02_Parent() {
+function Week902Parent() {
   let firstVar = 'First Word';
   let firstVar2 = 'Second Word';
 
@@ -23,10 +23,10 @@ function Week9_02_Parent() {
         <button onClick={handleClick}>click me</button>
         <br />
         <br />
-        <Week9_02_Child />
+        <Week902Child />
       </div>
     </div>
   );
 }
 
-export default Week9_02_Parent;
+export default Week902Parent;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Week10_04_EventsC(props) {
+function Week1004EventsC(props) {
   return (
     <li id={props.value}>
       {props.value}
@@ -15,4 +15,4 @@ function Week10_04_EventsC(props) {
   );
 }
 
-export default Week10_04_EventsC;
+export default Week1004EventsC;

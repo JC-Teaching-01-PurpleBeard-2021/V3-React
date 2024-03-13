@@ -1,15 +1,15 @@
 import React from 'react';
 import CMNavBar from '../_CMNavBar';
 
-import Week10_01_PropsChild from './Week10_01_PropsChild';
+import Week1001PropsChild from './Week1001PropsChild';
 
-function Week10_01_PropsParent() {
+function Week1001PropsParent() {
   return (
     <div className="app-container">
       <CMNavBar />
       <div className="content">
         <h1>First Example of Props</h1>
-        <Week10_01_PropsChild
+        <Week1001PropsChild
           name="Justin"
           colour="blue"
           calc={2 * 4}
@@ -22,4 +22,4 @@ function Week10_01_PropsParent() {
   );
 }
 
-export default Week10_01_PropsParent;
+export default Week1001PropsParent;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Week9_02_Child() {
+function Week902Child() {
   const funcOne = () => {
     alert('Hello Again');
   };
@@ -12,4 +12,4 @@ function Week9_02_Child() {
   );
 }
 
-export default Week9_02_Child;
+export default Week902Child;

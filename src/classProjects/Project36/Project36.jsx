@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import nextId from 'react-id-generator';
 
 import CPNavBar from '../_CPNavBar';
-import Project36_CreateTask from './Project36_CreateTask';
-import './Project36_Styles.css';
+import Project36CreateTask from './Project36CreateTask';
+import './Project36Styles.css';
 
 function Project36() {
   const [tasks, setTasks] = useState([
@@ -30,7 +30,7 @@ function Project36() {
       <CPNavBar />
       <div className="content">
         <h1>Project 36 - ToDo App</h1>
-        <Project36_CreateTask createTask={createTask} />
+        <Project36CreateTask createTask={createTask} />
         <table>
           <tbody>
             <tr>

@@ -10,26 +10,26 @@ import './index.css';
 
 import App from './App';
 // Class Material
-import Week9_01_FirstComponent from './classMaterial/week9/Week9_01_FirstComponent';
-import Week9_02_Parent from './classMaterial/week9/Week9_02_Parent';
-import Week9_03_Form from './classMaterial/week9/Week9_03_Form';
-import Week10_01_PropsParent from './classMaterial/week10/Week10_01_PropsParent';
-import Week10_02_useState from './classMaterial/week10/Week10_02_useState';
-import Week10_03_useEffect from './classMaterial/week10/Week10_03_useEffect';
-import Week10_04_EventsP from './classMaterial/week10/Week10_04_EventsP';
-import Week10_05_Forms from './classMaterial/week10/Week10_05_Forms';
+import Week901FirstComponent from './classMaterial/week9/Week901FirstComponent';
+import Week902Parent from './classMaterial/week9/Week902Parent';
+import Week903Form from './classMaterial/week9/Week903Form';
+import Week1001PropsParent from './classMaterial/week10/Week1001PropsParent';
+import Week1002useState from './classMaterial/week10/Week1002useState';
+import Week1003useEffect from './classMaterial/week10/Week1003useEffect';
+import Week1004EventsP from './classMaterial/week10/Week1004EventsP';
+import Week1005Forms from './classMaterial/week10/Week1005Forms';
 // Class Projects
-import Project30_Parent from './classProjects/Project30/Project30_Parent';
-import Project31_Form from './classProjects/Project31/Project31_Form';
-import Project32_Parent from './classProjects/Project32/Project32_Parent';
-import Project33_State from './classProjects/Project33/Project33_State';
-import Project34_useEffect from './classProjects/Project34/Project34_useEffect';
-import Project35_Forms from './classProjects/Project35/Project35_Forms';
+import Project30Parent from './classProjects/Project30/Project30Parent';
+import Project31Form from './classProjects/Project31/Project31Form';
+import Project32Parent from './classProjects/Project32/Project32Parent';
+import Project33State from './classProjects/Project33/Project33State';
+import Project34useEffect from './classProjects/Project34/Project34useEffect';
+import Project35Forms from './classProjects/Project35/Project35Forms';
 import Project36 from './classProjects/Project36/Project36';
 import Project37 from './classProjects/Project37/Project37';
 // Homework
-import Week9_HW_FramerMotion from './homeWork/week9/Week9_HW_FramerMotion';
-import Week10_HW_PlaceHolder from './homeWork/week10/Week10_HW_PlaceHolder';
+import Week9HWFramerMotion from './homeWork/week9/Week9HWFramerMotion';
+import Week10HWPlaceHolder from './homeWork/week10/Week10HWPlaceHolder';
 
 ReactDOM.render(
 	// prettier-ignore
@@ -38,26 +38,26 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         {/* Class Material */}
-        <Route path="/classMaterial/week9_01" element={<Week9_01_FirstComponent />} />
-        <Route path="/classMaterial/week9_02" element={<Week9_02_Parent />} />
-        <Route path="/classMaterial/week9_03" element={<Week9_03_Form />} />
-        <Route path="/classMaterial/week10_01" element={<Week10_01_PropsParent />} />
-        <Route path="/classMaterial/week10_02" element={<Week10_02_useState />} />
-        <Route path="/classMaterial/week10_03" element={<Week10_03_useEffect />} />
-        <Route path="/classMaterial/week10_04" element={<Week10_04_EventsP />} />
-        <Route path="/classMaterial/week10_05" element={<Week10_05_Forms />} />
+        <Route path="/classMaterial/week9_01" element={<Week901FirstComponent />} />
+        <Route path="/classMaterial/week9_02" element={<Week902Parent />} />
+        <Route path="/classMaterial/week9_03" element={<Week903Form />} />
+        <Route path="/classMaterial/week10_01" element={<Week1001PropsParent />} />
+        <Route path="/classMaterial/week10_02" element={<Week1002useState />} />
+        <Route path="/classMaterial/week10_03" element={<Week1003useEffect />} />
+        <Route path="/classMaterial/week10_04" element={<Week1004EventsP />} />
+        <Route path="/classMaterial/week10_05" element={<Week1005Forms />} />
         {/* Class Projects */}
-        <Route path="/classProjects/project30" element={<Project30_Parent />} />
-        <Route path="/classProjects/project31" element={<Project31_Form />} />
-        <Route path="/classProjects/project32" element={<Project32_Parent />} />
-        <Route path="/classProjects/project33" element={<Project33_State />} />
-        <Route path="/classProjects/project34" element={<Project34_useEffect />} />
-        <Route path="/classProjects/project35" element={<Project35_Forms />} />
+        <Route path="/classProjects/project30" element={<Project30Parent />} />
+        <Route path="/classProjects/project31" element={<Project31Form />} />
+        <Route path="/classProjects/project32" element={<Project32Parent />} />
+        <Route path="/classProjects/project33" element={<Project33State />} />
+        <Route path="/classProjects/project34" element={<Project34useEffect />} />
+        <Route path="/classProjects/project35" element={<Project35Forms />} />
         <Route path="/classProjects/project36" element={<Project36 />} />
         <Route path="/classProjects/project37" element={<Project37 />} />
         {/* Homework */}
-        <Route path="/homeWork/week9" element={<Week9_HW_FramerMotion />} />
-        <Route path="/homeWork/week10" element={<Week10_HW_PlaceHolder />} />
+        <Route path="/homeWork/week9" element={<Week9HWFramerMotion />} />
+        <Route path="/homeWork/week10" element={<Week10HWPlaceHolder />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

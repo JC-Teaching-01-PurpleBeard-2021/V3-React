@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
-function Project36_CreateTask(props) {
+function Project36CreateTask(props) {
   const [taskInput, setTaskInput] = useState('');
 
   return (
@@ -29,4 +29,4 @@ function Project36_CreateTask(props) {
   );
 }
 
-export default Project36_CreateTask;
+export default Project36CreateTask;

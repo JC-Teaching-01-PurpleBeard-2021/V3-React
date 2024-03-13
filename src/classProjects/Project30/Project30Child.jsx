@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Project30_Child() {
+function Project30Child() {
   const printName = () => {
     alert('Justin');
   };
@@ -11,4 +11,4 @@ function Project30_Child() {
   );
 }
 
-export default Project30_Child;
+export default Project30Child;

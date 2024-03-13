@@ -3,7 +3,7 @@ import nextId from 'react-id-generator';
 
 import CPNavBar from '../_CPNavBar';
 
-function Project35_Forms() {
+function Project35Forms() {
   const [myName, setMyName] = useState('Justin');
   const [movies, setMovies] = useState({
     movies: [
@@ -96,4 +96,4 @@ function Project35_Forms() {
   );
 }
 
-export default Project35_Forms;
+export default Project35Forms;

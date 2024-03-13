@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Week10_01_PropsChild(props) {
-  // function Week10_01_PropsChild({ of all the props}) {
+function Week1001PropsChild(props) {
+  // function Week1001PropsChild({ of all the props}) {
   // console.log(props);
 
   // Example that you cannot change props
@@ -10,9 +10,7 @@ function Week10_01_PropsChild(props) {
   // **** This is the wrong approach - do the map inside jsx****
   let listOfColours = '';
 
-  props.arr.map((v) => {
-    listOfColours += `<p>${v}</p>`;
-  });
+  props.arr.map((v) => listOfColours += `<p>${v}</p>`);
 
   return (
     <div>
@@ -42,4 +40,4 @@ function Week10_01_PropsChild(props) {
   );
 }
 
-export default Week10_01_PropsChild;
+export default Week1001PropsChild;

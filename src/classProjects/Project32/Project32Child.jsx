@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Project32_Child(props) {
+function Project32Child(props) {
   return (
     <div style={{ textAlign: 'center' }}>
       <h2 style={{ color: 'red' }}>{props.someText}</h2>
@@ -17,4 +17,4 @@ function Project32_Child(props) {
   );
 }
 
-export default Project32_Child;
+export default Project32Child;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CMNavBar from '../_CMNavBar';
 
-function Week10_03_useEffect() {
+function Week1003useEffect() {
   const [button, setButton] = useState(true);
   const [jsonData, setJsonData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,13 +10,14 @@ function Week10_03_useEffect() {
     alert('Hello Class');
   });
 
-  // useEffect(async () => {
-  //   const response = await fetch('https://jsonplaceholder.typicode.com/comments');
-  //   const data = await response.json();
-  //   // console.log(data);
-  //   setJsonData(data);
-  //   setLoading(false);
-  // }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/comments');
+    const data = await response.json();
+    // console.log(data);
+    setJsonData(data);
+    setLoading(false);
+  }, []);
 
   const changeButton = () => {
     setButton(!button);
@@ -53,4 +54,4 @@ function Week10_03_useEffect() {
   );
 }
 
-export default Week10_03_useEffect;
+export default Week1003useEffect;

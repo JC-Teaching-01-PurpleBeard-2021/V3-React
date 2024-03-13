@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import CPNavBar from '../_CPNavBar';
 
-function Project34_useEffect() {
+function Project34useEffect() {
   const [dataId, setDataId] = useState(1);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
     const dataAPI = await res.json();
@@ -45,4 +46,4 @@ function Project34_useEffect() {
   );
 }
 
-export default Project34_useEffect;
+export default Project34useEffect;

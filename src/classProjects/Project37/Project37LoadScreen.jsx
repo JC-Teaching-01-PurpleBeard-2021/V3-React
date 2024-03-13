@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
-function Project37_LoadScreen(props) {
+function Project37LoadScreen(props) {
   const [inputWordle, setInputWordle] = useState('');
 
   return (
@@ -29,4 +29,4 @@ function Project37_LoadScreen(props) {
   );
 }
 
-export default Project37_LoadScreen;
+export default Project37LoadScreen;

@@ -5,9 +5,9 @@ import { RadioButton } from 'primereact/radiobutton';
 import { Button } from 'primereact/button';
 
 import CPNavBar from '../_CPNavBar';
-import './Project31_Styles.css';
+import './Project31Styles.css';
 
-function Project31_Form() {
+function Project31Form() {
   const [sex, setSex] = useState(null);
   return (
     // prettier-ignore
@@ -46,4 +46,4 @@ function Project31_Form() {
   );
 }
 
-export default Project31_Form;
+export default Project31Form;
